@@ -104,7 +104,7 @@ class SecondFragment : Fragment() {
             String.format("Size : %s", getReadableFileSize((byteArray.size).toLong()))
         compressedSizeTextView.text = String.format(
             "Size : %s",
-            getReadableFileSize(decoded.toByteArray(Bitmap.CompressFormat.PNG)!!.size.toLong())
+            getReadableFileSize(decoded.toByteArray(Bitmap.CompressFormat.PNG)!!.size.toLong())+"("+decoded.width+"x"+decoded.height+")"
         )
 
         view.findViewById<Button>(R.id.button_second)
